@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="icons8-to-do-list-16.png" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Task List 2021</h1>
+      <form id="new-Task-form">
+        <input type="text" id="new-TaskList" placeholder="what do you have planned?">
+        <i id="add-Task" class="fas fa-plus"></i>
+      </form>
+    </header>
+
+
+    <main>
+      <section class="task-list">
+        <h3>Filter Tasks</h3>
+        <div class="header-Tasks">
+          <input type="text" id="search" placeholder="what do you have planned?">
+          <div class="selected">
+            <select name="sort" class="sort-Tasks">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
+        </div>
+
+        <h2>Tasks</h2>
+        
+        <div id="Tasks">  
+          
+        </div>
+      </section>
+    </main>
+    <script src="build/app.bundle.js"></script>
+  </body>
+</html>
